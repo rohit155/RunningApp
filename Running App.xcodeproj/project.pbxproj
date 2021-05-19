@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		F9E97D6D264A457500D0BAEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E97D6C264A457500D0BAEA /* AppDelegate.swift */; };
 		F9E97D6F264A457500D0BAEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E97D6E264A457500D0BAEA /* SceneDelegate.swift */; };
-		F9E97D71264A457500D0BAEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E97D70264A457500D0BAEA /* ViewController.swift */; };
+		F9E97D71264A457500D0BAEA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E97D70264A457500D0BAEA /* MapViewController.swift */; };
 		F9E97D74264A457500D0BAEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E97D72264A457500D0BAEA /* Main.storyboard */; };
 		F9E97D76264A457900D0BAEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E97D75264A457900D0BAEA /* Assets.xcassets */; };
 		F9E97D79264A457900D0BAEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E97D77264A457900D0BAEA /* LaunchScreen.storyboard */; };
+		F9E97D85264A570800D0BAEA /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E97D84264A570800D0BAEA /* RoundButton.swift */; };
+		F9E97D87264A69E400D0BAEA /* DistancePoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E97D86264A69E400D0BAEA /* DistancePoints.swift */; };
+		F9E97D89264A6AC100D0BAEA /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E97D88264A6AC100D0BAEA /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F9E97D69264A457500D0BAEA /* Running App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Running App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E97D6C264A457500D0BAEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9E97D6E264A457500D0BAEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F9E97D70264A457500D0BAEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9E97D70264A457500D0BAEA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F9E97D73264A457500D0BAEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9E97D75264A457900D0BAEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9E97D78264A457900D0BAEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9E97D7A264A457900D0BAEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9E97D84264A570800D0BAEA /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		F9E97D86264A69E400D0BAEA /* DistancePoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistancePoints.swift; sourceTree = "<group>"; };
+		F9E97D88264A6AC100D0BAEA /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		F9E97D6B264A457500D0BAEA /* Running App */ = {
 			isa = PBXGroup;
 			children = (
+				F9E97D83264A458800D0BAEA /* Services */,
+				F9E97D82264A458500D0BAEA /* Model */,
+				F9E97D81264A458300D0BAEA /* View */,
+				F9E97D80264A458000D0BAEA /* Controller */,
 				F9E97D6C264A457500D0BAEA /* AppDelegate.swift */,
 				F9E97D6E264A457500D0BAEA /* SceneDelegate.swift */,
-				F9E97D70264A457500D0BAEA /* ViewController.swift */,
 				F9E97D72264A457500D0BAEA /* Main.storyboard */,
 				F9E97D75264A457900D0BAEA /* Assets.xcassets */,
 				F9E97D77264A457900D0BAEA /* LaunchScreen.storyboard */,
 				F9E97D7A264A457900D0BAEA /* Info.plist */,
 			);
 			path = "Running App";
+			sourceTree = "<group>";
+		};
+		F9E97D80264A458000D0BAEA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F9E97D70264A457500D0BAEA /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F9E97D81264A458300D0BAEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9E97D84264A570800D0BAEA /* RoundButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9E97D82264A458500D0BAEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9E97D86264A69E400D0BAEA /* DistancePoints.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9E97D83264A458800D0BAEA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F9E97D88264A6AC100D0BAEA /* LocationService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9E97D71264A457500D0BAEA /* ViewController.swift in Sources */,
+				F9E97D85264A570800D0BAEA /* RoundButton.swift in Sources */,
+				F9E97D71264A457500D0BAEA /* MapViewController.swift in Sources */,
+				F9E97D87264A69E400D0BAEA /* DistancePoints.swift in Sources */,
 				F9E97D6D264A457500D0BAEA /* AppDelegate.swift in Sources */,
+				F9E97D89264A6AC100D0BAEA /* LocationService.swift in Sources */,
 				F9E97D6F264A457500D0BAEA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QQYZY6S3P;
 				INFOPLIST_FILE = "Running App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QQYZY6S3P;
 				INFOPLIST_FILE = "Running App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
