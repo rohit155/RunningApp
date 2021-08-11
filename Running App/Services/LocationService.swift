@@ -33,8 +33,8 @@ class LocationService: NSObject, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         currentLocation = manager.location?.coordinate
         
-        if customUserLocationDelegate != nil {
+//        if customUserLocationDelegate != nil {
             customUserLocationDelegate?.userLocationUpdated(location: locations.first!)
-        }
+//        }
     }
 }
